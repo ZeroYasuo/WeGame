@@ -1,0 +1,863 @@
+.center {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.logor .hide{
+  display: none;
+}
+body {
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/store-bg-20200722.jpg);
+}
+#nav {
+  height: 50px;
+  box-shadow: 0 2px 2px #3333;
+  background-color: #ffffff;
+}
+.nav_wrap {
+  position: relative;
+}
+.navl {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 560px;
+}
+.navl li {
+  margin-right: 8px;
+}
+.navl li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 12px;
+  font-size: 15px;
+  color: #3c3c3c;
+  box-sizing: border-box;
+}
+.navl li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navl .now a {
+  border-bottom: 5px solid #f69c00;
+  padding: 0;
+  margin: 0 12px;
+}
+.navl .allcontents a {
+  padding: 0 38px 0 19px;
+}
+.navl .allcontents {
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/下载.svg)
+    no-repeat 90px 22px;
+}
+.navl .allcontents {
+  position: relative;
+  margin-right: 0;
+}
+.navl .allcontents ul {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.navl .allcontents ul li {
+  width: 100%;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+.navl .allcontents:hover ul {
+  display: block;
+}
+.navl .allcontents .contents {
+  background-color: #ffffff;
+}
+.navl .allcontents .contents li {
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.navl .allcontents .contents li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.contents {
+  display: none;
+}
+.navr {
+  float: right;
+  width: 240px;
+  height: 32px;
+  border-radius: 32px;
+  border: 1px solid #ffb300;
+  margin-top: 9px;
+  background-color: rgba(255, 202, 40, 0.5);
+}
+.navr:hover {
+  background-color: #ffca28;
+}
+.navr input {
+  height: 27px;
+  width: 150px;
+  padding: 2px 25px 3px 15px;
+  border-radius: 30px 0 0 30px;
+  border: 0;
+  display: block;
+  float: left;
+}
+.navc {
+  float: right;
+  color: #f69c00;
+  line-height: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+.navr .sub {
+  display: block;
+  padding: 0;
+  width: 42px;
+  height: 30px;
+  border-radius: 0 30px 30px 0;
+  border: none;
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/放大镜.png)
+    no-repeat center 5px;
+  cursor: pointer;
+}
+#ban {
+  height: 322px;
+}
+.banner_wrap {
+  height: 322px;
+  position: relative;
+}
+.imgul {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 1000px;
+  height: 322px;
+  /* position: relative; */
+}
+.imgul li {
+  position: absolute;
+  opacity: 0;
+}
+.imgul > li.active {
+  opacity: 1;
+}
+.textul {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(15, 15, 35, 0.8);
+  /* background-color: hsla(0,0%,100%,.25); */
+  height: 321px;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  font-size: 14px;
+  color: #ded8d8;
+}
+.textul li.active {
+  background-color: #4c3034;
+  color: #ffffff;
+}
+.textul li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+}
+#ban {
+  margin-top: 30px;
+}
+.hotsort {
+  width: 168px;
+  /* height: 100px; */
+  position: absolute;
+  top: 0;
+  left: -208px;
+  background-color: #ffffff;
+}
+.hsh {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 54px;
+  margin: 0 10px;
+  border-bottom: 1px solid gray;
+}
+.sortbynav,
+.sortbychar {
+  padding-top: 8px;
+}
+.sortbynav span,
+.sortbychar span {
+  display: block;
+  width: 148px;
+  height: 20px;
+  font-size: 13px;
+  padding-left: 20px;
+  padding-top: 15px;
+  color: #757575;
+}
+.sortbynav li,
+.sortbychar li {
+  padding-left: 40px;
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/oss_5fbdfde890756.png)
+    no-repeat 20px center;
+  transition: all 0.3s linear;
+}
+.sortbynav li {
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/oss_5fbdfd9b9b492.png)
+    no-repeat 20px center;
+}
+.sortbynav li a,
+.sortbychar li a {
+  display: block;
+  height: 36px;
+  width: 168px;
+  color: #757575;
+  line-height: 36px;
+  font-size: 12px;
+}
+.hotsort li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ni_wrap {
+  margin-top: 20px;
+  font-size: 28px;
+  line-height: 70px;
+  overflow: hidden;
+}
+.line {
+  height: 15px;
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/future-head-bg.f9c93480.png)
+    repeat-x 0 0;
+  opacity: 0.1;
+}
+.ni_img {
+  width: 219px;
+  height: 278px;
+  position: absolute;
+  top: -15px;
+  left: 8px;
+}
+.ni_imgBox {
+  margin-top: 25px;
+  width: 1530px;
+  height: 450px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.ni_imgBox > li {
+  width: 235px;
+  height: 366px;
+  background-color: #ffffff;
+  position: relative;
+  margin-right: 20px;
+}
+.ni_imgBox .lastli {
+  margin-right: 0;
+}
+.ni_bot {
+  position: absolute;
+  bottom: -40px;
+  background-color: #ffffff;
+  padding: 12px 16px 0 16px;
+  width: 203px;
+  /* transform: translateY(40px); */
+  transition: all 0.2s linear;
+}
+.ni_bot .p1 {
+  font-size: 14px;
+  padding-bottom: 6px;
+  color: #757575;
+  height: 21px;
+  line-height: 21px;
+}
+.ni_bot .p2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.ni_bot .p3 {
+  height: 19px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ff6f00;
+}
+.p4 {
+  display: flex;
+}
+.p4 span {
+  flex: 1;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+}
+.ni_bot:hover {
+  transform: translateY(-40px);
+}
+.ni_bot .p4 span:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fat {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+.leftRight {
+  font-size: 20px;
+  position: absolute;
+  left: 470px;
+  top: 366px;
+  cursor: pointer;
+}
+.left {
+  margin-right: 40px;
+}
+#rank{
+  height: 801px;
+  overflow: hidden;
+}
+.rank_wrap{
+  height: 801px;
+  margin-top: 26px;
+  position: relative;
+}
+.r_top h2{
+  height: 70px;
+  font-size: 28px;
+  color: #3c3c3c;
+  white-space: nowrap;
+  line-height: 70px;
+  width: 84px;
+  position: absolute;
+}
+.r_top ul{
+  position: absolute;
+  width: 576px;
+  height: 40px;
+  left: 104px;
+  top: 15px;
+}
+.r_top li{
+  width: 64px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+.r_top .hotboom{
+  border-bottom: 5px solid #f69c00;
+  font-size: 16px;
+  font-weight: 700;
+}
+.morerank{
+  width: 90px;
+  height: 24px;
+  border-radius: 24px;
+  border: 1px solid #ded8d8;
+  float: right;
+  margin-top: 20px;
+  color: #3c3c3c;
+  font-size: 12px;
+}
+.morerank:hover{
+  background-color: #bfbfbf;
+  transition: all 0.5s linear;
+}
+.r_body_l{
+  width: 320px;
+  height: 711px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+.r_body_c{
+  width: 320px;
+  height: 711px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 340px;
+  top: 70px;
+}
+.r_body_r{
+  width: 320px;
+  height: 711px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 680px;
+  top: 70px;
+}
+.r_body_lt{
+  width: 288px;
+  height: 30px;
+  line-height: 30px;
+  padding: 16px 16px 14px 16px;
+}
+.r_body_lt span{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+.r_body_lb li{
+  width: 320px;
+  height: 92px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.r_body_lb li:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* .r_body_lb>ul:nth-child(1){
+  background-color: brown;
+} */
+.r_body_lb li span{
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+  float: left;
+  text-align: center;
+  color: #3c3c3c;
+  margin-top: 29px;
+}
+.r_body_lb li img{
+  width: 92px;
+  height: 54px;
+  float: left;
+  margin-top: 19px;
+}
+.r_body_lb li .dr{
+  width: 178px;
+  height: 54px;
+  float: right;
+  margin-top: 19px;
+}
+.r_body_lb li .dr .drt{
+  height: 29px;
+  line-height: 29px;
+  font-size: 15px;
+  color: #3c3c3c;
+}
+.r_body_lb li .dr .drb{
+  height: 20px;
+  line-height: 20px;
+  color: #757575;
+  font-size: 14px;
+}
+.text_wrap h2{
+  width: 112px;
+  height: 70px;
+  line-height: 70px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 28px;
+  color: #3c3c3c;
+}
+#text{
+  margin-top: 20px;
+}
+.text_wrap .newm{
+  width: 1000px;
+  height: 460px;
+  background-image: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/29509bf7504ea7a00a2b2f3e1b01dee3.jpg);
+  background-size: 1000px 460px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.text_wrap .five:hover img{
+  transform: scale(1.2);
+}
+.dark:hover img{
+  transform: scale(1.2);
+}
+.newm h3{
+  margin-top: 30px;
+  margin-left: 40px;
+  height: 54px;
+  font-size: 27px;
+  line-height: 54px;
+  color: #ffffff;
+}
+.newm p{
+  width: 380px;
+  height: 38px;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  color: #bfbfbf;
+  margin-left: 40px;
+}
+.enter{
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  width: 146px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  background-color:  #ffca28;
+}
+.enter a{
+  width: 146px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+}
+.five{
+  width: 470px;
+  height: 285px;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.five_l{
+  width: 199px;
+  height: 285px;
+  float: left;
+  overflow: hidden;
+}
+.five_l img{
+  transition: all 0.5s linear;
+}
+.five_r{
+  width: 271px;
+  height: 285px;
+  background-color: #fff;
+  float: right;
+  padding: 11px 20px 0 20px;
+  box-sizing: border-box;
+}
+.five_r p{
+  margin-left: 0;
+  width: 231px;
+}
+.five_r .fp1{
+  font-size: 15px;
+  color: #3c3c3c;
+  font-weight: 700;
+  height: 36px;
+  line-height: 36px;
+}
+.five_r .fp2,.five_r .fp3{
+  color: #757575;
+  font-size: 13px;
+  height: 18px;
+  line-height: 18px;
+}
+.fd4{
+  margin-top: 25px;
+  width: 231px;
+  height: 120px;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+.fd4 .fp4{
+  width: 195px;
+  height: 34px;
+}
+.fd4 .fp5{
+  position: absolute;
+  width: 60px;
+  height: 16px;
+  left: 15px;
+  bottom: 12px;
+}
+.fd4 .fp6{
+  position: absolute;
+  width: 70px;
+  height: 16px;
+  right: 15px;
+  bottom: 12px;
+}
+.dark{
+  width: 225px;
+  height: 284px;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  top: -80px;
+}
+.dark .dp1{
+  width: 225px;
+  height: 126px;
+  margin-left: 0;
+  overflow: hidden;
+}
+.dark .dp1 img{
+  transition: all 0.5s linear;
+}
+.dark .dp2{
+  width: 195px;
+  margin-left: 0;
+  font-size: 15px;
+  color: #3c3c3c;
+  font-weight: 700;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 15px;
+  padding-top: 11px;
+}
+.dark .dp3,.dark .dp4,.dark .dp5{
+  width: 195px;
+  margin-left: 0;
+  padding-left: 15px;
+  color: #757575;
+  font-size: 13px;
+  height: 18px;
+  line-height: 18px;
+}
+.dark .dp5{
+position: absolute;
+bottom: 20px;
+}
+#nowadays{
+  margin-top: 20px;
+}
+.nad_top{
+  width: 112px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 28px;
+  color: #3c3c3c;
+}
+.imgBox3{
+  height: 424px;
+  position: relative;
+}
+.imgBox3 li{
+  position: absolute;
+  width: 340px;
+  height: 424px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.imgBox3 li:hover .ib3t img{
+  transform: scale(1.2);
+}
+.imgBox3 li:hover .ib3b{
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.imgBox3 li:hover .ib3t{
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.imgBox3 .ib3t{
+  width: 321px;
+  height: 180px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+.imgBox3 .ib3t img{
+  transition: all 0.5s linear;
+}
+.imgBox3 .ib3b{
+  box-sizing: border-box;
+  padding: 20px 16px 0 16px;
+  width: 321px;
+  height: 224px;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+.ib3b .b1{
+  width: 289px;
+  height: 44px;
+  margin-top: -5px;
+  margin-bottom: 16px;
+}
+.b1 .b1l{
+  width: 64px;
+  height: 84px;
+  transform: translateY(-40px);
+  float: left;
+}
+.b1 .blr{
+  width: 289px;
+  height: 44px;
+  /* float: right; */
+  box-sizing: border-box;
+  padding-left: 74px;
+}
+.ia1{
+  color: #3c3c3c;
+  font-size: 14px;
+  float: left;
+}
+.ia2{
+  color: #3c3c3c;
+  font-size: 12px;
+  float: right;
+}
+.ia1:hover,.ia2:hover{
+  color: #f69c00;
+}
+.blr p{
+  float: left;
+  color: #3c3c3c;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.ib3b .b2{
+  font-size: 16px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  width: 289px;
+  margin-top: -20px;
+}
+.ib3b .b3p{
+  width: 289px;
+  height: 74px;
+  float: left;
+  color: #757575;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.b4{
+  width: 289px;
+  height: 43px;
+  float: left;
+}
+.b4 .bs1{
+  float: left;
+  color: #757575;
+  font-size: 13px;
+  line-height: 40px;
+}
+.b4 .bs2{
+  float: right;
+  color: #757575;
+  font-size: 13px;
+  line-height: 40px;
+}
+.iBl2{
+  left: 340px;
+}
+.iBl3{
+  left: 680px;
+}
+#dd ul{
+  left: 154px;
+}
+.dd_b{
+  position: absolute;
+  top: 70px;
+  width: 1000px;
+  height: 410px;
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/oss_5fca627dd6cd3.png) no-repeat center center;
+}
+.dd_s{
+  width: 480px;
+  height: 179px;
+  padding: 35px 30px 0 40px;
+}
+.dd_s h3{
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+  height: 49px;
+  line-height: 49px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all .2s linear;
+  box-sizing: border-box;
+}
+.dd_s h3:hover{
+  border-bottom: 3px solid #333;
+}
+.dd_s p{
+  font-size: 14px;
+  color: #3c3c3c;
+  text-align: justify;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border-left: 1px solid #3c3c3c;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.dd_s .look{
+  /* position: absolute; */
+  width: 146px;
+  height: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  background-color:  #ffca28;
+  cursor: pointer;
+}
+.dd_sug{
+  position: absolute;
+  height: 29px;
+  left: 40px;
+  top: 250px;
+}
+.dd_sp1{
+  width: 24px;
+  height: 24px;
+}
+.dd_sug .dd_sp2,.dd_sug .dd_sp3{
+  display: inline-block;
+  height: 29px;
+  line-height: 29px;
+}
+.dd_sp3{
+  font-size: 10px;
+  color: rgba(0, 0, 0,0.5);
+  line-height: 1.5;
+}
+.dd_sug p img{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.sug_img{
+  width: 504px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.simg{
+  width: 160px;
+  height: 90px;
+  margin-right: 8px;
+  overflow: hidden;
+  float:left;
+}
+.simg:hover img{
+  transform: scale(1.2);
+}
+.simg img{
+  width: 160px;
+  height: 90px;
+  transition: all 0.5s linear;
+}
+#dd .dd_wrap{
+  height: 550px;
+}
+

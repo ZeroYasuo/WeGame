@@ -1,0 +1,157 @@
+body{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#bottom{
+  margin-top: 600px;
+}
+.cart{
+  width: 1000px;
+  height: 314px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+}
+
+.cont p{
+  font-size: 18px;
+  color: #3c3c3c;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cont .go{
+  width: 60px;
+  height: 24px;
+  padding: 0 12px;
+  font-size: 12px;
+  border: 1px solid #a4a4a4;
+  color: #3c3c3c;
+  border-radius: 26px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.cont .go:hover{
+  background-color: #757575;
+}
+
+
+.content {
+  margin-top: 30px;
+}
+
+.content .selectAll {
+  font-size: 20px;
+  position: relative;
+}
+
+.content .selectAll > input {
+  width: 20px;
+  height: 20px;
+}
+
+.content .selectAll > .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 700;
+  color: green;
+}
+
+.content .goodsList > li {
+  height: 100px;
+  padding: 10px 0;
+  display: flex;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+
+.content .goodsList > li:last-child {
+  margin-bottom: 0;
+}
+
+.content .goodsList > li > .select {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .goodsList > li > .goodsImg {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.content .goodsList > li > .goodsDesc {
+  width: 300px;
+  padding: 10px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content .goodsList > li > .goodsDesc > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.content .goodsList > li > .price,
+.content .goodsList > li > .xiaoji {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.content .goodsList > li > .count {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .goodsList > li > .count > button {
+  width: 30px;
+  height: 30px;
+}
+
+.content .goodsList > li > .count > input {
+  width: 75px;
+  height: 33px;
+  text-align: center;
+  border: none;
+}
+
+.content .goodsList > li > .operate {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyInfo {
+  display: flex;
+  align-items: center;
+}
+
+.buyInfo > .buyNum,
+.buyInfo > .buyMoney,
+.buyInfo > .operate {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.buyInfo > .buyNum > span,
+.buyInfo > .buyMoney > span {
+  font-size: 30px;
+}

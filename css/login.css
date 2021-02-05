@@ -1,0 +1,120 @@
+.login {
+  width: 560px;
+  height: 410px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.lgt {
+  height: 57px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.lgtl,
+.lgtr {
+  width: 40px;
+  height: 56px;
+  box-sizing: border-box;
+  border-bottom: 5px solid #f69c00;
+  position: absolute;
+  left: 220px;
+  text-align: center;
+}
+.lgtr {
+  left: 300px;
+  border-bottom: none;
+}
+.lgtl > p {
+  width: 32px;
+  height: 32px;
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/qq.png)
+    no-repeat -160px center;
+}
+.lgtr > p {
+  width: 32px;
+  height: 32px;
+  background: url(../images/WeGame游戏商店\ -\ 发现更大的游戏世界_files/qq.png)
+    no-repeat -192px center;
+}
+.lgb {
+  overflow: hidden;
+  position: relative;
+  height: 352px;
+}
+.lp1 {
+  margin-top: 32px;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.lp2 {
+  font-style: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.usn,
+.pwd,
+.sub {
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+  width: 268px;
+  height: 38px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  left: 146px;
+}
+.usn {
+  top: 126px;
+}
+.pwd {
+  top: 186px;
+  
+}
+.sub {
+  padding: 10px;
+  width: 120px;
+  top: 246px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #86ce2f;
+}
+.ing {
+  width: 120px;
+  top: 246px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 38px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  right: 146px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #86ce2f;
+  
+}
+.form-group {
+  margin-bottom: 50px;
+ 
+}
+
+.hide{
+  display: none;
+}
+
+.lgb {
+  position: relative;
+}
+
+.hide{
+  display: none;
+}

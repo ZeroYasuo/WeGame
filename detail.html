@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/detail.css">
+</head>
+<body>
+  <!-- 顶部 -->
+  <div id="logo">
+    <div class="logo_wrap">
+      <a href="#" target="_blank"
+        ><img
+          src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/wegame-logo-40.776e17ff.png"
+          class="logopic"
+      /></a>
+      <ul class="logoc flex">
+        <li><a href="#">商店</a></li>
+        <li><a href="#">客户端</a></li>
+        <li><a href="#">移动端</a></li>
+        <li><a href="#">翼计划</a></li>
+        <li><a href="#">帮助反馈</a></li>
+      </ul>
+      <div class="logor">
+        <a href="https://developer.wegame.com/">开发者平台</a>
+        <a
+          href="https://dldir1.qq.com/tgc/wegame/mini/repo/WeGameMiniLoader.std.2.07.29.1736.exe"
+          class="upd"
+          >下载客户端</a
+        >
+        <a href="./login.html">登录</a>
+      </div>
+    </div>
+  </div>
+  <h1>游戏详情</h1>
+  <!-- 游戏详情 -->
+  <div class="box" id="box1">
+    <!-- 图片展示盒子 -->
+    <div class="show">
+      <img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/show.jpg" alt="">
+      <div class="mask"></div>
+    </div>
+
+    <!-- 图片选项列表盒子 -->
+    <div class="list">
+      <p class="active">
+        <img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/small.jpg" show="./images/WeGame游戏商店 - 发现更大的游戏世界_files/small.jpg" enlarge="./big.jpg" alt="">
+      </p>
+      <p>
+        <img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/small1.jpg" show="./images/WeGame游戏商店 - 发现更大的游戏世界_files/small1.jpg" enlarge="./big1.jpg" alt="">
+      </p>
+    </div>
+
+    <!-- 放大镜盒子 -->
+    <div class="enlarge"></div>
+  </div>
+  <div class="items">
+    <ul class="det">
+      <li>
+        <div class="dl flex">发行日期</div>
+        <div class="dr flex">2018-09-14</div>
+      </li>
+      <li>
+        <div class="dl flex">推荐率</div>
+        <div class="dr flex">90.2%</div>
+      </li>
+      <li>
+        <div class="dl flex">开发商</div>
+        <div class="dr flex">盛趣游戏</div>
+      </li>
+      <li>
+        <div class="dl flex">运营商</div>
+        <div class="dr flex">Spure Enix</div>
+      </li>
+      <li>
+        <div class="dl flex">发行平台</div>
+        <div class="dr flex">WeGame</div>
+      </li>
+    </ul>
+    <div class="addCart flex">
+      <a href="">加入购物车</a>
+    </div>
+  </div>
+  <div id="bottom">
+    <div class="bot_wrap center">
+      <div class="bwl">
+        <div class="wll">下载客户端:</div>
+        <div class="wlr"><img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/win.png" alt=""></div>
+        <div class="wcl">官方渠道：</div>
+        <div class="wcr wcr1"><img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/sina.png" alt=""></div>
+        <div class="wcr wcr2">
+          <img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/we.png" alt="">
+          <div class="ewm"><img src="./images/WeGame游戏商店 - 发现更大的游戏世界_files/wechat-rcode (1).jpg" alt=""></div>
+        </div>
+        <div class="wrl">
+          友情链接：
+        </div>
+        <div class="wr">
+          <div class="wrr flex">
+            <a href="">QQ阅读</a>
+            <a href="">QQ阅读</a>
+          </div>
+          <div class="wrr flex">
+            <a href="">QQ阅读</a>
+            <a href="">QQ阅读</a>
+          </div>
+        </div>
+      </div>
+      <p class="bp">
+        关于腾讯|About Tencent|服务条款|软件许可及服务协议|隐私保护指引|儿童隐私保护指引|侵权通知|广告服务|腾讯招聘|客服中心|网站导航
+      </p>
+      <p class="bp2">
+        COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.
+      </p>
+      <p class="bp3">
+        腾讯公司 版权所有
+      </p>
+    </div>
+  </div>
+  <script src="./assets/jquery/jquery.min.js"></script>
+  <script src="./js/pubic.js"></script>
+  <script src="./js/detail.js"></script>
+  <script>
+    const e1 = new Enlarge('#box1')
+    console.log(e1)
+  </script>
+</body>
+</html>
